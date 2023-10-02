@@ -1,0 +1,636 @@
+@media (min-width: 1025px) and (max-width: 1920px){
+    @mixin text{
+        color: white;
+        font-family: lato;
+        font-weight: 300;
+        font-size: 20px;
+    }
+    @mixin headText{
+        color: white;
+        font-size: 24px;
+        font-family: Irish Grover;
+        letter-spacing: 2px;
+    }
+    .feedback {
+        background: #262626;
+        
+    }
+    .section-feedback {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        justify-items: center;
+        padding: 50px 0;
+    }
+    .section-feedback__description {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 40px;
+        & > h3{
+            @include headText;
+        }
+        & > p{
+            @include text;
+            text-align: center;
+        }
+    }
+    .section-feedback__feedback {
+    }
+    .form-feedback {
+        display: grid;
+        gap: 20px;
+        & > input{
+            width: 320px;
+            height: 48px;
+            background-color: transparent;
+            border: 1px solid white;
+            outline: none;
+            @include text;
+            padding: 0 17px 0px 10px;
+            transition: 0.3s;
+            &::placeholder{
+                text-align: center;
+            }
+            /*&:focus{
+                box-shadow: 0px 0px 5px 3px white;
+            }*/
+        }
+    }
+    .form-feedback__name {
+        &:focus:valid {
+            border-color: green;
+            color: green;
+            box-shadow: 0px 0px 5px 3px green;
+        }
+        &:focus:invalid {
+            border-color: red;
+            color: red;
+            box-shadow: none;
+        }
+    }
+    .form-feedback__phone {
+        &:focus:valid {
+            border-color: green;
+            color: green;
+            box-shadow: 0px 0px 5px 3px green;
+        }
+        &:focus:invalid {
+            border-color: red;
+            color: red;
+            box-shadow: none;
+        }
+    }
+    .check{
+        display: none;
+    }
+    .check:checked+.label::before{
+        transform: scale(1);
+    }
+    .form-feedback__checkbox {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        & > label{
+            position: relative;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 20px;
+            height: 20px;
+            background-color: transparent;
+            border: 1px solid white;
+            cursor: pointer;
+            &::before{
+                position: absolute;
+                content: "";
+                width: 16px;
+                height: 16px;
+                background-color: white;
+                transform: scale(0);
+                transition: 0.3s;
+            }
+        }   
+        & > span{
+            @include text();
+            font-size: 18px;
+        }
+    }
+    .form-feedback__send {
+        display: flex;
+        justify-content: center;
+        & > button{
+            width: 170px;
+            height: 48px;
+            background-color: transparent;
+            border: 1px solid white;
+            outline: none;
+            color: white;
+            cursor: pointer;
+            font-family: lato;
+            font-size: 18px;
+            letter-spacing: 1px;
+            position: relative;
+            overflow: hidden;
+            &::before{
+                position: absolute;
+                content: "";
+                background: linear-gradient(45deg, rgba(255, 255, 255, 0), white, rgba(255, 255, 255, 0));
+                width: 100%;
+                height: 100%;
+                transform: translate(-100%);
+                transition: 0.3s;
+                top: 0px;
+                left: 0px;
+            }
+            &:hover{
+                &::before{
+                    transform: translate(100%);
+                }
+            }  
+        }
+    }
+    
+    .message {
+        /*position: fixed;
+        width: 100%;
+        height: 100%;
+        background: rgba(204, 204, 204, 0.3490196078);
+        z-index: 1;*/
+        display: flex;
+        justify-content: center;
+    }
+    .message__block {
+        background: white;
+        display: grid;
+        width: 500px;
+        height: 200px;
+        padding: 20px;
+        position: fixed;
+        z-index: 1;
+        transform: translateY(-100%); // с помощью JS выдвигаем
+        transition: 0.3s;
+    }
+    .message__text {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        & > h3{
+            font-family: lato;
+        }
+    }
+    .message__close {
+        display: flex;
+        align-items: flex-end;
+        justify-content: flex-end;
+    }
+    .close{
+        background: blue;
+        color: white;
+        font-family: lato;
+        padding: 10px 25px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+    .message__block_show{
+        transform: translateY(0%);
+        transition: 0.3s;
+    }
+}
+@media (min-width: 768px) and (max-width: 1024px){
+    @mixin text{
+        color: white;
+        font-family: lato;
+        font-weight: 300;
+        font-size: 20px;
+    }
+    @mixin headText{
+        color: white;
+        font-size: 24px;
+        font-family: Irish Grover;
+        letter-spacing: 2px;
+    }
+    .feedback {
+        background: #262626;
+        
+    }
+    .section-feedback {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        justify-items: center;
+        padding: 50px 0;
+    }
+    .section-feedback__description {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 40px;
+        & > h3{
+            @include headText;
+        }
+        & > p{
+            @include text;
+            text-align: center;
+        }
+    }
+    .section-feedback__feedback {
+    }
+    .form-feedback {
+        display: grid;
+        gap: 20px;
+        & > input{
+            width: 320px;
+            height: 48px;
+            background-color: transparent;
+            border: 1px solid white;
+            outline: none;
+            @include text;
+            padding: 0 17px 0px 10px;
+            transition: 0.3s;
+            &::placeholder{
+                text-align: center;
+            }
+            &:focus{
+                box-shadow: 0px 0px 5px 3px white;
+            }
+        }
+    }
+    .form-feedback__name {
+    }
+    .form-feedback__phone {
+    }
+    .check{
+        display: none;
+    }
+    .check:checked+.label::before{
+        transform: scale(1);
+    }
+    .form-feedback__checkbox {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        & > label{
+            position: relative;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 20px;
+            height: 20px;
+            background-color: transparent;
+            border: 1px solid white;
+            cursor: pointer;
+            &::before{
+                position: absolute;
+                content: "";
+                width: 16px;
+                height: 16px;
+                background-color: white;
+                transform: scale(0);
+                transition: 0.3s;
+            }
+        }   
+        & > span{
+            @include text();
+            font-size: 18px;
+        }
+    }
+    .form-feedback__send {
+        display: flex;
+        justify-content: center;
+        & > button{
+            width: 170px;
+            height: 48px;
+            background-color: transparent;
+            border: 1px solid white;
+            outline: none;
+            color: white;
+            cursor: pointer;
+            font-family: lato;
+            font-size: 18px;
+            letter-spacing: 1px;
+            position: relative;
+            overflow: hidden;
+            &::before{
+                position: absolute;
+                content: "";
+                background: linear-gradient(45deg, rgba(255, 255, 255, 0), white, rgba(255, 255, 255, 0));
+                width: 100%;
+                height: 100%;
+                transform: translate(-100%);
+                transition: 0.3s;
+                top: 0px;
+                left: 0px;
+            }
+            &:hover{
+                &::before{
+                    transform: translate(100%);
+                }
+            }  
+        }
+    }
+    .form-feedback__send {
+        display: flex;
+        justify-content: center;
+        & > button{
+            width: 170px;
+            height: 48px;
+            background-color: transparent;
+            border: 1px solid white;
+            outline: none;
+            color: white;
+            cursor: pointer;
+            font-family: lato;
+            font-size: 18px;
+            letter-spacing: 1px;
+            position: relative;
+            overflow: hidden;
+            &::before{
+                position: absolute;
+                content: "";
+                background: linear-gradient(45deg, rgba(255, 255, 255, 0), white, rgba(255, 255, 255, 0));
+                width: 100%;
+                height: 100%;
+                transform: translate(-100%);
+                transition: 0.3s;
+                top: 0px;
+                left: 0px;
+            }
+            &:hover{
+                &::before{
+                    transform: translate(100%);
+                }
+            }  
+        }
+    }
+    
+    .message {
+        /*position: fixed;
+        width: 100%;
+        height: 100%;
+        background: rgba(204, 204, 204, 0.3490196078);
+        z-index: 1;*/
+        display: flex;
+        justify-content: center;
+    }
+    .message__block {
+        background: white;
+        display: grid;
+        width: 500px;
+        height: 200px;
+        padding: 20px;
+        position: fixed;
+        z-index: 1;
+        transform: translateY(-100%); // с помощью JS выдвигаем
+        transition: 0.3s;
+    }
+    .message__text {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        & > h3{
+            font-family: lato;
+        }
+    }
+    .message__close {
+        display: flex;
+        align-items: flex-end;
+        justify-content: flex-end;
+    }
+    .close{
+        background: blue;
+        color: white;
+        font-family: lato;
+        padding: 10px 25px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+    .message__block_show{
+        transform: translateY(0%);
+        transition: 0.3s;
+    }
+}
+@media (min-width: 319px) and (max-width: 767px){
+    @mixin text{
+        color: white;
+        font-family: lato;
+        font-weight: 300;
+        font-size: 20px;
+    }
+    @mixin headText{
+        color: white;
+        font-size: 24px;
+        font-family: Irish Grover;
+        letter-spacing: 2px;
+    }
+    .feedback {
+        background: #262626;
+        
+    }
+    .section-feedback {
+        padding: 50px 0;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 30px;
+    }
+    .section-feedback__description {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 40px;
+        & > h3{
+            @include headText;
+            text-align: center;
+        }
+        & > p{
+            @include text;
+            text-align: center;
+        }
+    }
+    .section-feedback__feedback {
+        
+    }
+    .form-feedback {
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+        & > input{
+            width: 100%;
+            height: 48px;
+            background-color: transparent;
+            border: 1px solid white;
+            outline: none;
+            @include text;
+            padding: 0 17px 0px 10px;
+            transition: 0.3s;
+            &::placeholder{
+                text-align: center;
+            }
+            &:focus{
+                box-shadow: 0px 0px 5px 3px white;
+            }
+        }
+    }
+    .form-feedback__name {
+        
+    }
+    .form-feedback__phone {
+    }
+    .check{
+        display: none;
+    }
+    .check:checked+.label::before{
+        transform: scale(1);
+    }
+    .form-feedback__checkbox {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        & > label{
+            position: relative;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 20px;
+            height: 20px;
+            background-color: transparent;
+            border: 1px solid white;
+            cursor: pointer;
+            &::before{
+                position: absolute;
+                content: "";
+                width: 16px;
+                height: 16px;
+                background-color: white;
+                transform: scale(0);
+                transition: 0.3s;
+            }
+        }   
+        & > span{
+            color: white;
+            font-family: 'Lato';    
+        }
+    }
+    .form-feedback__send {
+        display: flex;
+        justify-content: center;
+        & > button{
+            width: 100%;
+            height: 48px;
+            background-color: transparent;
+            border: 1px solid white;
+            outline: none;
+            color: white;
+            cursor: pointer;
+            font-family: lato;
+            font-size: 18px;
+            letter-spacing: 1px;
+            position: relative;
+            overflow: hidden;
+            &::before{
+                position: absolute;
+                content: "";
+                background: linear-gradient(45deg, rgba(255, 255, 255, 0), white, rgba(255, 255, 255, 0));
+                width: 100%;
+                height: 100%;
+                transform: translate(-100%);
+                transition: 0.3s;
+                top: 0px;
+                left: 0px;
+            }
+            &:hover{
+                &::before{
+                    transform: translate(100%);
+                }
+            }  
+        }
+    }
+    .form-feedback__send {
+        display: flex;
+        justify-content: center;
+        & > button{
+            width: 170px;
+            height: 48px;
+            background-color: transparent;
+            border: 1px solid white;
+            outline: none;
+            color: white;
+            cursor: pointer;
+            font-family: lato;
+            font-size: 18px;
+            letter-spacing: 1px;
+            position: relative;
+            overflow: hidden;
+            &::before{
+                position: absolute;
+                content: "";
+                background: linear-gradient(45deg, rgba(255, 255, 255, 0), white, rgba(255, 255, 255, 0));
+                width: 100%;
+                height: 100%;
+                transform: translate(-100%);
+                transition: 0.3s;
+                top: 0px;
+                left: 0px;
+            }
+            &:hover{
+                &::before{
+                    transform: translate(100%);
+                }
+            }  
+        }
+    }
+    
+    .message {
+        /*position: fixed;
+        width: 100%;
+        height: 100%;
+        background: rgba(204, 204, 204, 0.3490196078);
+        z-index: 1;*/
+        display: flex;
+        justify-content: center;
+    }
+    .message__block {
+        background: white;
+        display: grid;
+        width: 100%;
+        height: 200px;
+        padding: 20px;
+        position: fixed;
+        z-index: 1;
+        transform: translateY(-100%); // с помощью JS выдвигаем
+        transition: 0.3s;
+    }
+    .message__text {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        & > h3{
+            font-family: lato;
+        }
+    }
+    .message__close {
+        display: flex;
+        align-items: flex-end;
+        justify-content: flex-end;
+    }
+    .close{
+        background: blue;
+        color: white;
+        font-family: lato;
+        padding: 10px 25px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+    .message__block_show{
+        transform: translateY(0%);
+        transition: 0.3s;
+    }
+}

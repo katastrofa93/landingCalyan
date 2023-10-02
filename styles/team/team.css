@@ -1,0 +1,103 @@
+@media (min-width: 1025px) and (max-width: 1920px) {
+  .team {
+    padding: 50px 0;
+    position: relative;
+    background: linear-gradient(45deg, black, transparent), url(../../images/bg3.jpg);
+  }
+  .section-team {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 100px;
+  }
+  .section-team__face {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .section-team__face > p {
+    text-align: center;
+    color: white;
+    font-family: lato;
+    font-weight: 300;
+    font-size: 20px;
+  }
+  .section-team__cyrcl {
+    width: 130px;
+    height: 130px;
+    border-radius: 50%;
+    overflow: hidden;
+  }
+  .section-team__cyrcl > img {
+    width: 100%;
+  }
+}
+@media (min-width: 768px) and (max-width: 1024px) {
+  .team {
+    padding: 50px 0;
+    position: relative;
+    background: linear-gradient(45deg, black, transparent), url(../../images/bg3.jpg);
+  }
+  .section-team {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 100px;
+  }
+  .section-team__face {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .section-team__face > p {
+    text-align: center;
+    color: white;
+    font-family: lato;
+    font-weight: 300;
+    font-size: 20px;
+  }
+  .section-team__cyrcl {
+    width: 130px;
+    height: 130px;
+    border-radius: 50%;
+    overflow: hidden;
+  }
+  .section-team__cyrcl > img {
+    width: 100%;
+  }
+}
+@media (min-width: 319px) and (max-width: 767px) {
+  .team {
+    padding: 50px 0;
+    position: relative;
+    background: linear-gradient(45deg, black, transparent), url(../../images/bg3.jpg);
+  }
+  .section-team {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 60px;
+    padding: 50px 0;
+    align-content: center;
+    justify-content: center;
+  }
+  .section-team__face {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 300px;
+  }
+  .section-team__face > p {
+    text-align: center;
+    color: white;
+    font-family: lato;
+    font-weight: 300;
+    font-size: 20px;
+  }
+  .section-team__cyrcl {
+    width: 130px;
+    height: 130px;
+    border-radius: 50%;
+    overflow: hidden;
+  }
+  .section-team__cyrcl > img {
+    width: 100%;
+  }
+}/*# sourceMappingURL=team.css.map */

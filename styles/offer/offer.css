@@ -1,0 +1,191 @@
+@media (min-width: 1025px) and (max-width: 1920px) {
+  .offer {
+    position: relative;
+    background: linear-gradient(45deg, black, transparent), url(../../images/relax.jpg);
+    background-position-x: center;
+  }
+  .section-offer__article {
+    padding: 118px 0 79px 0;
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    justify-items: center;
+    row-gap: 44px;
+  }
+  .section-offer__article > h2 {
+    color: white;
+    font-size: 24px;
+    font-family: Irish Grover;
+    letter-spacing: 2px;
+    grid-area: 1/2;
+  }
+  .section-offer__text {
+    grid-area: 2/2;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  .section-offer__text > p {
+    color: white;
+    font-family: lato;
+    font-weight: 300;
+    font-size: 20px;
+  }
+  .section-offer__cart {
+    display: flex;
+    gap: 80px;
+    justify-content: center;
+    padding-bottom: 62px;
+  }
+  .cart {
+    background: rgba(217, 217, 217, 0.1);
+    width: 270px;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding: 42px 10px 0px 10px;
+    gap: 72px;
+  }
+  .cart > h3 {
+    color: white;
+    font-size: 24px;
+    font-family: Irish Grover;
+    letter-spacing: 2px;
+  }
+  .cart > p {
+    color: white;
+    font-family: lato;
+    font-weight: 300;
+    font-size: 20px;
+  }
+}
+@media (min-width: 768px) and (max-width: 1024px) {
+  .offer {
+    position: relative;
+    background: linear-gradient(45deg, black, transparent), url(../../images/relax.jpg);
+    background-position-x: center;
+  }
+  .section-offer__article {
+    padding: 118px 0 79px 0;
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    justify-items: center;
+    row-gap: 44px;
+  }
+  .section-offer__article > h2 {
+    color: white;
+    font-size: 24px;
+    font-family: Irish Grover;
+    letter-spacing: 2px;
+    grid-area: 1/2;
+  }
+  .section-offer__text {
+    grid-area: 2/2;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  .section-offer__text > p {
+    color: white;
+    font-family: lato;
+    font-weight: 300;
+    font-size: 20px;
+  }
+  .section-offer__cart {
+    display: flex;
+    gap: 80px;
+    justify-content: center;
+    padding-bottom: 62px;
+  }
+  .cart {
+    background: rgba(217, 217, 217, 0.1);
+    width: 270px;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding: 42px 10px 0px 10px;
+    gap: 72px;
+  }
+  .cart > h3 {
+    color: white;
+    font-size: 24px;
+    font-family: Irish Grover;
+    letter-spacing: 2px;
+  }
+  .cart > p {
+    color: white;
+    font-family: lato;
+    font-weight: 300;
+    font-size: 20px;
+  }
+}
+@media (min-width: 319px) and (max-width: 767px) {
+  .offer {
+    position: relative;
+    background: linear-gradient(45deg, black, transparent), url(../../images/relax.jpg);
+    background-position: center;
+    background-color: black;
+    background-repeat: no-repeat;
+  }
+  .section-offer {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 30px 0;
+  }
+  .section-offer__article {
+    display: flex;
+    flex-direction: column;
+  }
+  .section-offer__article > h2 {
+    display: flex;
+    justify-content: center;
+    padding: 50px 0 20px 0;
+    color: white;
+    font-size: 24px;
+    font-family: Irish Grover;
+    letter-spacing: 2px;
+  }
+  .section-offer__text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  .section-offer__text > p {
+    color: white;
+    font-family: lato;
+    font-weight: 300;
+    font-size: 20px;
+  }
+  .section-offer__cart {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+  }
+  .cart {
+    background: rgba(217, 217, 217, 0.1);
+    width: 270px;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding: 42px 10px 0px 10px;
+    gap: 72px;
+  }
+  .cart > h3 {
+    color: white;
+    font-size: 24px;
+    font-family: Irish Grover;
+    letter-spacing: 2px;
+  }
+  .cart > p {
+    color: white;
+    font-family: lato;
+    font-weight: 300;
+    font-size: 20px;
+  }
+}/*# sourceMappingURL=offer.css.map */

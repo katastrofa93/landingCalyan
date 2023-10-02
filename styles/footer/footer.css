@@ -1,0 +1,344 @@
+@media (min-width: 1025px) and (max-width: 1920px) {
+  footer {
+    position: relative;
+    animation: headerBackground 160s infinite ease;
+    background: linear-gradient(45deg, black, transparent), url(../../images/atmos.jpg);
+  }
+  .section-footer {
+    position: relative;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-areas: "a b c" "d d d";
+    padding: 38px 0;
+  }
+  .footer__addres {
+    display: flex;
+    flex-direction: column;
+    gap: 17px;
+    grid-area: a;
+  }
+  .footer__addres > h3 {
+    color: white;
+    font-family: lato;
+    font-weight: 300;
+    font-size: 20px;
+  }
+  .footer__ul-addres {
+    display: flex;
+    flex-direction: column;
+    gap: 17px;
+  }
+  .footer__li-addres > address {
+    color: white;
+    font-family: lato;
+    font-weight: 300;
+    font-size: 20px;
+    font-style: normal;
+  }
+  .footer__dev {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    grid-area: b;
+  }
+  .footer__dev > span {
+    color: white;
+    font-family: lato;
+    font-weight: 300;
+    font-size: 20px;
+  }
+  .footer__subscribe {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    grid-area: c;
+  }
+  .footer__subscribe > h3 {
+    color: white;
+    font-family: lato;
+    font-weight: 300;
+    font-size: 20px;
+  }
+  .footer__ul-social {
+    display: flex;
+    gap: 15px;
+    padding: 10px 0px;
+  }
+  .footer__ul-social > li > a {
+    color: #ccc;
+    transition: 0.3s;
+    cursor: pointer;
+    font-size: 24px;
+  }
+  .footer__ul-social > li > a:hover {
+    text-shadow: 0px 0px 3px white;
+  }
+  .footer__warning {
+    display: flex;
+    justify-content: center;
+    grid-area: d;
+  }
+  .footer__warning > span {
+    color: white;
+    font-family: lato;
+    font-weight: 300;
+    font-size: 20px;
+  }
+  .smoke {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+  }
+  .smoke::before {
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 100%;
+    background: url(../../images/fog.png);
+    background-repeat: repeat-x;
+    background-size: 400%;
+    background-position: center;
+    animation: smoke 100s infinite ease;
+  }
+  .smoke::after {
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 100%;
+    background: url(../../images/fog-1.png);
+    background-repeat: repeat-x;
+    background-size: 400%;
+    background-position: center;
+    animation: smoke 120s infinite ease;
+  }
+}
+@media (min-width: 768px) and (max-width: 1024px) {
+  footer {
+    position: relative;
+    animation: headerBackground 160s infinite ease;
+    background: linear-gradient(45deg, black, transparent), url(../../images/atmos.jpg);
+  }
+  .section-footer {
+    position: relative;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-areas: "a b c" "d d d";
+    padding: 38px 0;
+  }
+  .footer__addres {
+    display: flex;
+    flex-direction: column;
+    gap: 17px;
+    grid-area: a;
+  }
+  .footer__addres > h3 {
+    color: white;
+    font-family: lato;
+    font-weight: 300;
+    font-size: 20px;
+  }
+  .footer__ul-addres {
+    display: flex;
+    flex-direction: column;
+    gap: 17px;
+  }
+  .footer__li-addres > address {
+    color: white;
+    font-family: lato;
+    font-weight: 300;
+    font-size: 20px;
+    font-style: normal;
+  }
+  .footer__dev {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    grid-area: b;
+  }
+  .footer__dev > span {
+    color: white;
+    font-family: lato;
+    font-weight: 300;
+    font-size: 20px;
+  }
+  .footer__subscribe {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    grid-area: c;
+  }
+  .footer__subscribe > h3 {
+    color: white;
+    font-family: lato;
+    font-weight: 300;
+    font-size: 20px;
+  }
+  .footer__ul-social {
+    display: flex;
+    gap: 15px;
+    padding: 10px 0px;
+  }
+  .footer__ul-social > li > a {
+    color: #ccc;
+    transition: 0.3s;
+    cursor: pointer;
+    font-size: 24px;
+  }
+  .footer__ul-social > li > a:hover {
+    text-shadow: 0px 0px 3px white;
+  }
+  .footer__warning {
+    display: flex;
+    justify-content: center;
+    grid-area: d;
+  }
+  .footer__warning > span {
+    color: white;
+    font-family: lato;
+    font-weight: 300;
+    font-size: 20px;
+  }
+  .smoke {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+  }
+  .smoke::before {
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 100%;
+    background: url(../../images/fog.png);
+    background-repeat: repeat-x;
+    background-size: 400%;
+    background-position: center;
+    animation: smoke 100s infinite ease;
+  }
+  .smoke::after {
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 100%;
+    background: url(../../images/fog-1.png);
+    background-repeat: repeat-x;
+    background-size: 400%;
+    background-position: center;
+    animation: smoke 120s infinite ease;
+  }
+}
+@media (min-width: 319px) and (max-width: 767px) {
+  footer {
+    position: relative;
+    background: linear-gradient(45deg, black, transparent), url(../../images/atmos.jpg);
+  }
+  .section-footer {
+    position: relative;
+    padding: 38px 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+  .footer__addres {
+    display: flex;
+    flex-direction: column;
+    gap: 17px;
+    grid-area: a;
+  }
+  .footer__addres > h3 {
+    color: white;
+    font-family: lato;
+    font-weight: 300;
+    font-size: 20px;
+  }
+  .footer__ul-addres {
+    display: flex;
+    flex-direction: column;
+    gap: 17px;
+  }
+  .footer__li-addres > address {
+    color: white;
+    font-family: lato;
+    font-weight: 300;
+    font-size: 20px;
+    font-style: normal;
+  }
+  .footer__dev {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    grid-area: b;
+  }
+  .footer__dev > span {
+    color: white;
+    font-family: lato;
+    font-weight: 300;
+    font-size: 20px;
+  }
+  .footer__subscribe {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    grid-area: c;
+  }
+  .footer__subscribe > h3 {
+    color: white;
+    font-family: lato;
+    font-weight: 300;
+    font-size: 20px;
+  }
+  .footer__ul-social {
+    display: flex;
+    gap: 15px;
+    padding: 10px 0px;
+  }
+  .footer__ul-social > li > a {
+    color: #ccc;
+    transition: 0.3s;
+    cursor: pointer;
+    font-size: 24px;
+  }
+  .footer__ul-social > li > a:hover {
+    text-shadow: 0px 0px 3px white;
+  }
+  .footer__warning {
+    display: flex;
+    justify-content: center;
+    grid-area: d;
+  }
+  .footer__warning > span {
+    color: white;
+    font-family: lato;
+    font-weight: 300;
+    font-size: 20px;
+  }
+  .smoke {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+  }
+  .smoke::before {
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 100%;
+    background: url(../../images/fog.png);
+    background-repeat: repeat-x;
+    background-size: 400%;
+    background-position: center;
+    animation: smoke 20s infinite ease;
+  }
+  .smoke::after {
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 100%;
+    background: url(../../images/fog-1.png);
+    background-repeat: repeat-x;
+    background-size: 400%;
+    background-position: center;
+    animation: smoke 10s infinite ease;
+  }
+}/*# sourceMappingURL=footer.css.map */
